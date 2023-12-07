@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<form action="/credits" method="post">
+  <select name="dropdown">
+    <option th:each="option : ${dropdownOptions_semester}" th:value="${option}" th:text="${option}"></option>
+  </select>
+  <input type="submit" value="제출">
+</form>
+<table>
+  <thead>
+  <tr>
+    <th>분야</th>
+    <th>과목</th>
+    <th>학점</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="item, index : ${class}">
+    <td th:text="${subjects[index.index]}"></td>
+    <td th:text="${item}"></td>
+    <td th:text="${credits[index.index].credit}"></td>
+  </tr>
+  </tbody>
+</table>
+<form action="/credits/{semester}" method="post">
+  <select name="dropdown_subject">
+    <option th:each="option : ${dropdownOptions_subject}" th:value="${option}" th:text="${option}"></option>
+  </select>
+  <select name="dropdown_class">
+    <option th:each="option : ${dropdownOptions_class}" th:value="${option}" th:text="${option}"></option>
+  </select>
+  <input type="submit" value="제출">
+</form>
+</body>
+</html>

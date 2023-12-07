@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div th:if="${member}">
+        <!-- 버튼으로 링크를 만듭니다. -->
+        <h1>Welcome, <span th:text="${member.name}"></span>!</h1>
+        <p>
+            <button onclick="location.href='/credits/1'">이수내역 입력하기</button>
+            <button onclick="location.href='/mypage'">My Page</button>
+        </p>
+        <p>
+            <a href="/logout"><button>로그아웃</button></a>
+        </p>
+    </div>
+    <div th:unless="${member}">
+        <!-- 로그인되지 않은 경우에 보여줄 내용을 여기에 작성 -->
+        <p>로그인이 필요합니다.</p>
+        <a href="/">홈으로 돌아가기</a>
+    </div>
+</div>
+</body>
+</html>
