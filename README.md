@@ -3,7 +3,7 @@
 #### 크레딧 파트너는 2025년부터 시행되는 고교학점제에 대한 학생들의 혼란을 줄이고
 #### 과목, 진로 선택에 도움을 주기 위해 희망 진로에 따라 맞춤형 서비스를 제공해주는 웹사이트입니다.
 
-https://www.youtube.com/watch?v=G0o8I53gf9o
+https://youtu.be/4CdubDLUlVM?si=iGSfgopA-AP8APln
 
 위 유튜브 링크에서 서비스 시연 영상을 보실 수 있습니다.
 
